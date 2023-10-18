@@ -7,32 +7,29 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
-import { motion, useAnimation } from "framer-motion";
-
-import { useInView } from "react-intersection-observer";
 
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Portfolio = () => {
 
-  
+  useEffect(() => {
+    AOS.init();
+  }, [])
  
   return (
-    <motion.section
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -30 }}
-    transition={{ duration: 3 }}
+    <section
+ 
     id='portfolio'>
         <h5>My Recent Work</h5>
         <h2>Portfolio</h2>
 
         <div  className='container portfolio__container'>
           <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
-                <img src={IMG1} alt=''/>
+            <div data-aos="fade-up" className='portfolio__item-image'>
+                <img  src={IMG1} alt=''/>
             </div>
             <h3>House listing website</h3>
             <div className='portfolio__item-cta'>
@@ -41,8 +38,8 @@ const Portfolio = () => {
             </div>
           </article>
 
-          <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
+          <article  className='portfolio__item'>
+            <div data-aos="fade-right" className='portfolio__item-image'>
                 <img src={IMG2} alt=''/>
             </div>
             <h3>E- commerce</h3>
@@ -54,7 +51,7 @@ const Portfolio = () => {
 
          
         </div>
-    </motion.section>
+    </section>
   )
 }
 

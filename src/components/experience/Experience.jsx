@@ -13,14 +13,14 @@ const Experience = () => {
     AOS.init();
   }, [])
   return (
-    <section data-aos="ease-in-out" data-aos-duration="4000" id='experience'>
+    <section data-aos="fade-up"  id='experience'>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
       <div className='container experience__container'>
         <div data-aos="fade-up" className='experience__frontend'>
           <h3>Frontend Development</h3>
-          <div className='experience__content'>
+          <div data-aos="fade-down" className='experience__content'>
             <article className='experience__details'>
             <FontAwesomeIcon icon={faCheckDouble} className='experience__details-icon'/>
             <div>
@@ -71,10 +71,10 @@ const Experience = () => {
 
           </div>
         </div>
-        <div  data-aos="fade-left" className='experience__frontend'>
+        <div data-aos="fade-down" className='experience__frontend'>
         <h3>Backend Development</h3>
-          <div data-aos="fade-down" className='experience__content'>
-            <article className='experience__details'>
+          <div data-aos="fade-up" className='experience__content'>
+            <article  className='experience__details'>
             <FontAwesomeIcon icon={faCheckDouble} className='experience__details-icon'/>
             <div>
             <h4>Node.js</h4>

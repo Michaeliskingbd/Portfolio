@@ -14,7 +14,7 @@ const Contact = () => {
     AOS.init();
   }, [])
   return (
-    <section data-aos="fade-left" id='contact'>
+    <section data-aos="fade-up" id='contact'>
       <h5>Get in Touch</h5>
       <h2>Contact me</h2>
 

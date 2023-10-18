@@ -12,7 +12,7 @@ const About = () => {
     AOS.init();
   }, [])
   return (
-    <section data-aos="fade-right" data-aos-duration="8000"  id='about'>
+    <section data-aos="fade-up" data-aos-duration="8000"  id='about'>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
@@ -24,7 +24,7 @@ const About = () => {
         </div>
 
         <div className='about__content'>
-          <div className='about__cards'>
+          <div data-aos="flip-up" className='about__cards'>
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
