@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './experience.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Experience = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section id='experience'>
+    <section data-aos="ease-in-out" data-aos-duration="4000" id='experience'>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
       <div className='container experience__container'>
-        <div className='experience__frontend'>
+        <div data-aos="fade-up" className='experience__frontend'>
           <h3>Frontend Development</h3>
           <div className='experience__content'>
             <article className='experience__details'>
@@ -63,9 +71,9 @@ const Experience = () => {
 
           </div>
         </div>
-        <div className='experience__frontend'>
+        <div  data-aos="fade-left" className='experience__frontend'>
         <h3>Backend Development</h3>
-          <div className='experience__content'>
+          <div data-aos="fade-down" className='experience__content'>
             <article className='experience__details'>
             <FontAwesomeIcon icon={faCheckDouble} className='experience__details-icon'/>
             <div>

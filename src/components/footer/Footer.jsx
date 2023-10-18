@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './footer.css'
 import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa"
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Footer = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <footer>
     
 
-      <ul className='permalinks'>
+      <ul   data-aos="fade-down" className='permalinks'>
         <li><a href='#'>Home</a></li>
         <li><a href='#about'>About</a></li>
         <li><a href='#experience'>Experience</a></li>

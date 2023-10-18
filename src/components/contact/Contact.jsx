@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FaEnvelope, FaFacebookMessenger, FaWhatsapp,  FaLinkedin} from 'react-icons/fa'
 import { faFacebookMessenger, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Contact = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section id='contact'>
+    <section data-aos="fade-left" id='contact'>
       <h5>Get in Touch</h5>
       <h2>Contact me</h2>
 

@@ -1,22 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/Untitled-2.png'
 import HeaderSocials from './HeaderSocials'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Header = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <header>
-      <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Michael Aladejuyigbe</h1>
-        <h5 className='text-light'>
+      <div   className="container header__container">
+        <h5 data-aos="flip-right" data-aos-duration="4000">Hello I'm</h5>
+        <h1 data-aos="flip-left" >Michael Aladejuyigbe</h1>
+        <h5 data-aos="flip-down"  className='text-light'>
           Fullstack Developer
         </h5>
         
         <CTA/>
 
-        <div className='me'>
+        <div data-aos="fade-right" data-aos-duration="4000" className='me' >
           <img src={ME} alt='me'/>
         </div>
 
