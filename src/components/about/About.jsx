@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './about.css'
-import ME from '../../assets/Untitled-3.png'
+import ME from '../../assets/ascot1.png'
 import {FaAward, FaLaptop} from "react-icons/fa"
 
 import AOS from 'aos';

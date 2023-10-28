@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
+import IMG3 from '../../assets/n4.png'
+import IMG4 from '../../assets/calculator.png'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
@@ -31,10 +31,21 @@ const Portfolio = () => {
             <div data-aos="fade-up" className='portfolio__item-image'>
                 <img  src={IMG1} alt=''/>
             </div>
-            <h3>House listing website</h3>
+            <h3>Real Estate website</h3>
             <div className='portfolio__item-cta'>
             <a href='https://github.com' className='btn' target='_blank'>Github</a>
-            <a href='https://hlistng-michael-king.vercel.app/' className='btn btn-primary' target='_blank'>Vist Site</a>
+            <a href='https://hlistng-michael-king.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
+          <article  className='portfolio__item'>
+            <div data-aos="fade-right" className='portfolio__item-image  netflix'>
+                <img src={IMG3} alt=''/>
+            </div>
+            <h3>Netflix clone</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://netflix-clone-michaelking.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
 
@@ -45,7 +56,18 @@ const Portfolio = () => {
             <h3>E- commerce</h3>
             <div className='portfolio__item-cta'>
             <a href='https://github.com' className='btn' target='_blank'>Github</a>
-            <a href='/' className='btn btn-primary' target='_blank'>Visit Site</a>
+            <a href='/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
+          <article  className='portfolio__item'>
+            <div data-aos="fade-right" className='portfolio__item-image'>
+                <img src={IMG4} alt=''/>
+            </div>
+            <h3>Calculator</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://king-calculator.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
 

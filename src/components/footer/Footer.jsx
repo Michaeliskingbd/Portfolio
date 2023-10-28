@@ -30,7 +30,7 @@ const Footer = () => {
       <a href='https://twitter.com/Michaelkingbd'><FaTwitter/></a>
       <a href='https://www.instagram.com/michaelkingrbn/'><FaInstagram/></a>
       <a href='https://github.com/Michaeliskingbd/'><FaGithub/></a>
-      <a href='www.linkedin.com/in/michael-aladejuyigbe-625521296'><FaLinkedin/></a>
+      <a href='www.linkedin.com/in/michael-aladejuyigbe-573b78296'><FaLinkedin/></a>
       </div>
 
       <div className='footer__copyright'>

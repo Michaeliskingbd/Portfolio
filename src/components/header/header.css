@@ -63,19 +63,35 @@ header {
 
 /* media queries (medium screen) */
 @media screen  and (max-width: 1024px) {
-    .header{
-      height: 68vh;
+    header{
+        height: 45vh;
      
+    
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+
+    .me {
+        background: linear-gradient(var(--color-primary), transparent);
+        width: 22rem;
+        height: 20rem;
+        position: absolute; 
+        left: calc(50% - 11rem);
+        margin-top: 4rem;
+        border-radius: 12rem 12rem 0 0;
+        overflow: hidden;
+        padding: 0rem 0rem 0rem 0rem;
+        display: none;
+    
     
     }
   }
   
   /* media queries (small screen) */
   @media screen and (max-width: 600px) {
-    .header{
-     height: 100vh;
-    
-    }
     
     .header__socials,
     .scroll__down {
@@ -92,13 +108,14 @@ header {
         border-radius: 12rem 12rem 0 0;
         overflow: hidden;
         padding: 0rem 0rem 0rem 0rem;
+        display: none;
     
     
     }
 
     header {
         
-        height: 90vh;
+        height: fit;
         
     }
     
@@ -107,10 +124,6 @@ header {
   }
 
   @media screen and (max-width: 690px) {
-    .header{
-     height: 100vh;
-    
-    }
     
     .header__socials,
     .scroll__down {
@@ -133,7 +146,7 @@ header {
 
     header {
         
-        height: 100vh;
+        height: fit-content;
         
     }
     

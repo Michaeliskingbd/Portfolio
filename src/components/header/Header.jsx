@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/Untitled-2.png'
+import ME from '../../assets/Black Modern Chief Exclusive Office Resume.mp4'
 import HeaderSocials from './HeaderSocials'
 
 import AOS from 'aos';
@@ -23,11 +23,11 @@ const Header = () => {
         
         <CTA/>
 
-        <div data-aos="fade-right" data-aos-duration="4000" className='me' >
-          <img src={ME} alt='me'/>
-        </div>
+       <div data-aos="fade-right" data-aos-duration="4000" className='me' >
+          <video autoPlay src={ME} alt='me'/>
+  </div>
 
-        <a href='#contact' className='scroll__down'>Scroll down</a>
+         <a href='#contact' className='scroll__down'>Scroll down</a>
         <HeaderSocials/>
       </div>
     </header>
