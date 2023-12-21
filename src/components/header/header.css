@@ -61,6 +61,40 @@ header {
     font-size: 0.9rem;
 }
 
+.popup-message {
+    position: absolute;
+    top: 450px;
+    z-index: 1;
+    left: 25%;
+    transform: translateX(-50%);
+    background-color: #e7c00e;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .popup-message:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #e7c00e;
+  }
+  
+  .popup-message.hidden {
+    opacity: 0;
+  }
+  
+  .popup-message.visible {
+    opacity: 1;
+  }
+  
+
 /* media queries (medium screen) */
 @media screen  and (max-width: 1024px) {
     header{
@@ -119,7 +153,31 @@ header {
         
     }
     
-   
+    .popup-message {
+        position: absolute;
+        width: 200px;
+        top: 500px;
+        z-index: 1;
+        left: 35%;
+        transform: translateX(-60%);
+        background-color: #e7c00e;
+        border: 1px solid #000000;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 5px;
+        transition: opacity 0.5s ease-in-out;
+      }
+    
+      .popup-message:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #e7c00e;
+      }
     
   }
 

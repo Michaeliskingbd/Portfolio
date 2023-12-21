@@ -14,7 +14,7 @@ const Experience = () => {
   }, [])
   return (
     <section data-aos="fade-up"  id='experience'>
-      <h5>What Skills I Have</h5>
+      <h5>My Skills</h5>
       <h2>My Experience</h2>
 
       <div className='container experience__container'>

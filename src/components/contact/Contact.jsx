@@ -1,17 +1,21 @@
 import React, { useEffect } from 'react'
 import './contact.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { FaEnvelope, FaFacebookMessenger, FaWhatsapp,  FaLinkedin} from 'react-icons/fa'
-import { faFacebookMessenger, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
+import { FaEnvelope, FaWhatsapp,  FaLinkedin} from 'react-icons/fa'
+
 
 import  { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useUserContext } from '../../UserContext';
 
 const Contact = () => {
+
+
+  const { user } = useUserContext();
+ 
 
   const form = useRef();
 
@@ -59,7 +63,7 @@ const Contact = () => {
         </article>
         </div>
         <form ref = {form} onSubmit={sendEmail} >
-          <input type='text' name='name' placeholder='Your Full Name' required/>
+          <input type='text' name='name' placeholder='Your Full Name' required value={user? user.name: ""}/>
           <input type='email' name='email' placeholder='Your Email' required/>
           <textarea type='message' name='message' rows='7' placeholder='Your Message' required/>
           <button type='submit' className='btn btn-primary'> Send message </button>
