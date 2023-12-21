@@ -90,7 +90,7 @@ const LandingPage = () => {
     </div> : ""}
 
 
-    {showFact ? <div className="gamebox" style={{width:"340px"}} data-aos="fade-right">
+    {showFact ? <div className="gamebox"  data-aos="fade-right">
           <h2 className='cancel' onClick={playFact}>X</h2>
       <h1>Random Facts</h1>
       {gameStarted ? (
