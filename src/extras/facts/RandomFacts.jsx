@@ -80,7 +80,7 @@ const RandomFact = () => {
 
   return (
     <div className="random-fact"  data-aos="fade-up">
-      <p  data-aos="fade-in">{randomFact}</p>
+      <p  >{randomFact}</p>
       <button className='btn r' onClick={getRandomFact}>Next</button>
     </div>
   );

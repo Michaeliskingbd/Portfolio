@@ -79,7 +79,7 @@ const GuessingGame = () => {
 
 
   const lifeline = 5-wrongGuesses
-  console.log(lifeline)
+
 
   return (
    <> {gameScreen? <div className="guessinggame">

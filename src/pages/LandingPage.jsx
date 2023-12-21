@@ -77,7 +77,7 @@ const LandingPage = () => {
         </form>
        { showGame ? <div className="gamebox" data-aos="fade-left">
           <h2 className='cancel' onClick={playGame}>X</h2>
-      <h1>Guessing Game</h1>
+      <h1 className='hhh'>Guessing Game</h1>
        { rule ? <p style={{fontSize:".9rem"}}><strong>Rules:</strong><br/>
          Guess the hidden number from three or two options available. Correct guesses earn 10 points; five wrong guesses end the game. Hidden number revealed briefly on incorrect guesses. Restart for a new game which comes with a free guess. 
       </p> : ""}
@@ -90,7 +90,7 @@ const LandingPage = () => {
     </div> : ""}
 
 
-    {showFact ? <div className="gamebox" style={{width:"400px"}} data-aos="fade-right">
+    {showFact ? <div className="gamebox" style={{width:"340px"}} data-aos="fade-right">
           <h2 className='cancel' onClick={playFact}>X</h2>
       <h1>Random Facts</h1>
       {gameStarted ? (
