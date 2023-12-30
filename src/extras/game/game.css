@@ -42,3 +42,7 @@
   top: 5px;
   cursor: pointer;
  }
+
+ @media screen and (max-width: 690px) {
+  
+ }
